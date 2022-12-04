@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>ERROR NJIR</title>
+    <script>
+        var timeleft = 3;
+
+        function countdown() {
+            timeleft--;
+            document.getElementById('detik').innerText = timeleft
+            if (timeleft > 0) {
+                setTimeout(countdown, 1000)
+            } else {
+                window.location.href = '/'
+            }
+        }
+        window.onload = function () {
+            countdown()
+        }
+    </script>
+</head>
+
+<body>
+    <h1>ERROR COY!!!</h1>
+    <h2>TUNGGU <span id="detik"></span> DETIK</h2>
+</body>
+
+</html>
